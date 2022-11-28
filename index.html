@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>🐱 Cats</title>
+
+    <style>
+      body {
+        background-image: radial-gradient(
+          circle at 10% 20%,
+          rgb(186, 190, 245) 0%,
+          rgb(192, 192, 245) 33.1%,
+          rgb(218, 203, 246) 90%
+        );
+        color: #fff;
+        width: 50%;
+        margin: 60px auto;
+        font-family: "Cerebri Sans", Helvetica, Arial, sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+        font-weight: bold;
+        border: 1px solid #fff;
+        padding: 20px;
+        border-radius: 4px;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 24px;
+      }
+
+      img {
+        margin: 0 auto;
+        display: block;
+        border-radius: 4px;
+        max-width: 600px;
+      }
+
+      button {
+        background: rgba(0, 0, 0, 0.87);
+        border: none;
+        font-size: 42px;
+        border-radius: 4px;
+        text-transform: uppercase;
+        color: #fff;
+        display: block;
+        padding: 10px 20px;
+        transition: opacity 150ms ease;
+        cursor: pointer;
+        opacity: 1;
+        box-shadow: 0 1px 20px rgba(0, 0, 0, 0.5);
+        margin: 30px auto;
+      }
+
+      button:hover {
+        opacity: 0.9;
+      }
+
+      a {
+        color: #fff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>I love Cats</h1>
+    <h2>So did the ancient Egyptians</h2>
+    <hr />
+
+    <img
+      src="https://scontent.fltn3-1.fna.fbcdn.net/v/t1.6435-9/92485113_3193012824042585_329912569902923776_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=730e14&_nc_ohc=5IHt2vfquNQAX_bhrN1&_nc_ht=scontent.fltn3-1.fna&oh=00_AfD2AYMML7b68coUapjTkCAwXporVbjpNOr_1uvXzJaHEg&oe=63ACA02E"
+      alt="Cat taking selfie on Camel in Egypt"
+    />
+    <hr />
+    <p>
+      <strong>Ancient Egyptians</strong> believed cats were magical creatures,
+      capable of bringing good luck to the people who housed them. To honor
+      these treasured pets, wealthy families dressed them in jewels and fed them
+      treats fit for royalty. When the cats died, they were mummified. As a sign
+      of mourning, the cat owners shaved off their eyebrows, and continued to
+      mourn until their eyebrows grew back. Art from ancient Egypt shows statues
+      and paintings of every type of feline. Cats were so special that those who
+      killed them, even by accident, were sentenced to death.
+    </p>
+    <small
+      ><a
+        href="https://kids.nationalgeographic.com/pages/article/cats-rule-in-ancient-egypt#:~:text=Egyptians%20believed%20cats%20were%20magical,cats%20died%2C%20they%20were%20mummified."
+        target="_blank"
+        >Read on National Geographic</a
+      ></small
+    >
+    <br />
+    <button class="btn">Adopt a Cat!</button>
+
+    <script>
+      document.querySelector(".btn").addEventListener("click", function () {
+        let name = prompt("What is your name?");
+        if (name.length) {
+          alert(
+            "Thanks, " +
+              name +
+              " , we will be in touch. Meanwhile, watch cat videos on TikTok!"
+          );
+        } else {
+          alert("No name, no Cats for you!");
+        }
+      });
+    </script>
+  </body>
+</html>
